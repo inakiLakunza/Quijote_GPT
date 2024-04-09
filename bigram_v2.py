@@ -1,3 +1,4 @@
+
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
@@ -11,6 +12,9 @@ LEARNING_RATE = 1e-2
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 EVAL_ITERS = 200
 TRAIN_SPLIT_PERCENT = 90
+
+# Number of embedding dimensions
+N_EMBD = 32
 
 
 torch.manual_seed(1337)
@@ -69,16 +73,50 @@ def estimate_loss():
 
 class BigramLanguageModel(nn.Module):
     
-    def __init__(self, vocab_size):
+    # We do not need to initialize our Bigram model with the vocab
+    # size since it is already defined as a global variable
+    def __init__(self):
         super().__init__()
-        # each token directly reads off the logits for the next token from a lookup table
-        self.token_embedding_table = nn.Embedding(vocab_size, vocab_size)
+        # n_embd == Number of Embedding Dimensions
+        self.token_embedding_table = nn.Embedding(vocab_size, N_EMBD)
+
+        # We will also encode the position of each token in the input
+        # this way we will be able to know the position of the token
+        # related to each embedding, since the position of each token
+        # is important in a phrase.
+        self.position_embedding_table = nn.Embedding(BLOCK_SIZE, N_EMBD)
         
+        # Language Modelling Head
+        self.lm_head = nn.linear(N_EMBD, vocab_size)
         
     def forward(self, idx, targets=None):
-        
+        B, T = idx.shape
+
+
         # idx and targets are both (B, T) tensor of integers
-        logits = self.token_embedding_table(idx) # (B, T, C)
+        
+        # This is not going to give us directly the logits,
+        # it will first give us the token embeddings
+
+        # Now we will have two different channel numbers, the one
+        # for the number of dimensions it has our embedding, and the
+        # other one for the number of channels it has our logits, which
+        # is our vocab size. So we will use C for the dimensions
+        # and then we will write vocab size
+        token_embd = self.token_embedding_table(idx) # (B, T, C)
+        # the arange will just give us integers from position 0 to T-1
+        pos_embd = self.position_embedding_table(torch.arange(T, device=DEVICE)) # (T, C)
+        
+        # IN A BIGRAM MODEL THE POSITION OF EACH TOKEN DOES NOT MATTER SINCE
+        # WE ARE JUST USING THE PREVIOUS TOKEN TO PREDICT THE FUTURE TOKEN
+        # BUT WHEN WE ANALYZE CONTEXT WHICH IS FURTHER, THE LOCATION OF
+        # EACH ONE OF THEM IS OF EXTREME IMPORTANCE
+
+        # and so, now we will use both, the embedding of the value of
+        # each token and the embedding of the position of each token
+        # since both the value and the location are important information
+        x = token_embd + pos_embd
+        logits = self.lm_head(x)            # (B, T, vocab_size)
         
         if targets is None:
             loss = None
