@@ -3,18 +3,22 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
+from building_blocks import Head
+
 # HYPERPARAMETERS
 BATCH_SIZE = 32
 BLOCK_SIZE = 8
-MAX_ITERS = 3000
-EVAL_INTERVAL = 300
-LEARNING_RATE = 1e-2
+MAX_ITERS = 5000
+EVAL_INTERVAL = 500
+LEARNING_RATE = 1e-3 # self attention needs to have a quite low lr
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 EVAL_ITERS = 200
 TRAIN_SPLIT_PERCENT = 90
 
 # Number of embedding dimensions
 N_EMBD = 32
+
+#HEAD_SIZE = 16
 
 
 torch.manual_seed(1337)
@@ -87,7 +91,9 @@ class BigramLanguageModel(nn.Module):
         self.position_embedding_table = nn.Embedding(BLOCK_SIZE, N_EMBD)
         
         # Language Modelling Head
-        self.lm_head = nn.linear(N_EMBD, vocab_size)
+        # FOR NOW, WE WILL USE THE N_EMBD SIZE AS THE HEAD SIZE
+        self.sa_head = Head(BLOCK_SIZE, N_EMBD, N_EMBD)
+        self.lm_head = nn.Linear(N_EMBD, vocab_size)
         
     def forward(self, idx, targets=None):
         B, T = idx.shape
@@ -116,7 +122,9 @@ class BigramLanguageModel(nn.Module):
         # each token and the embedding of the position of each token
         # since both the value and the location are important information
         x = token_embd + pos_embd
-        logits = self.lm_head(x)            # (B, T, vocab_size)
+        x = self.sa_head_head(x) # apply one head of self-attention (B, T, C)
+        logits = self.lm_head(x) # (B, T, vocab_size)
+
         
         if targets is None:
             loss = None
@@ -132,8 +140,16 @@ class BigramLanguageModel(nn.Module):
     def generate(self, idx, max_new_tokens):
         # idx is (B, T) array of indices in the current context
         for _ in range(max_new_tokens):
+
+            # BECAUSE WE ARE USING POSITIONAL ENCODING, WE HAVE TO
+            # MAKE SURE THAT OUR idx THAT WE FED INTO THE MODEL,
+            # IS NEVER LARGER THAN THE BLOCK SIZE WE CHOOSE,
+            # BECAUSE OTHERWISE THE POSITIONAL EMBEDDING TABLE
+            # IS GOING TO RUN OUT OF SCOPE
+            idx_cond = idx[:, -BLOCK_SIZE:]
+
             # get the predictions
-            logits, loss = self(idx)
+            logits, loss = self(idx_cond)
             # focus only on the last time step
             logits = logits[:, -1, :] # logits becomes (B, C)
             # apply Softmax to get probabilities
