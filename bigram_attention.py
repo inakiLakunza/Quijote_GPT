@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
-from building_blocks import Head
+from building_blocks import Block, FeedForward
 
 # HYPERPARAMETERS
 BATCH_SIZE = 32
@@ -92,7 +92,18 @@ class BigramLanguageModel(nn.Module):
         
         # Language Modelling Head
         # FOR NOW, WE WILL USE THE N_EMBD SIZE AS THE HEAD SIZE
-        self.sa_head = Head(BLOCK_SIZE, N_EMBD, N_EMBD)
+        # AND 4 HEADS, AND 4 HEADS OF 8 DIMENSIONAL SELF ATTENTION,
+        # INSTEAD OF JUST USING A SINGLE HEAD OF 32 DIMENSIONAL SELF ATTENTION
+        N_HEADS = 4
+        # WE MUST ASSURE THAT N_EMBD=N_HEADS*HEAD_SIZE, BECAUSE WE MUST MAITAIN THE DIMENSIONALITY!! 
+        self.blocks = nn.Sequential(
+            Block(N_EMBD, N_HEADS),
+            Block(N_EMBD, N_HEADS),
+            Block(N_EMBD, N_HEADS),
+        )
+        
+        self.ffwd = FeedForward(N_EMBD)
+        
         self.lm_head = nn.Linear(N_EMBD, vocab_size)
         
     def forward(self, idx, targets=None):
@@ -121,9 +132,10 @@ class BigramLanguageModel(nn.Module):
         # and so, now we will use both, the embedding of the value of
         # each token and the embedding of the position of each token
         # since both the value and the location are important information
-        x = token_embd + pos_embd
-        x = self.sa_head_head(x) # apply one head of self-attention (B, T, C)
-        logits = self.lm_head(x) # (B, T, vocab_size)
+        x = token_embd + pos_embd # (B, T, C)
+        x = self.sa_heads(x)  # apply one head of self-attention (B, T, C)
+        x = self.ffwd(x)          # (B, T, C)
+        logits = self.lm_head(x)  # (B, T, vocab_size)
 
         
         if targets is None:
