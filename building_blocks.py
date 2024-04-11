@@ -30,7 +30,7 @@ class FeedForward(nn.Module):
         )
 
     def forward(self, x):
-        return self.next(x)
+        return self.net(x)
 
 class Head(nn.Module):
     """
@@ -57,7 +57,7 @@ class Head(nn.Module):
 
         # compute attention scores, "affinities"
         #===================================
-        normalize_C = C**-0.5
+        normalize_C = k.shape[-1]**-0.5
         wei = q @ k.transpose(-2, -1) * normalize_C # (B, T, C) @ (B, C, T) -> (B, T, T)
         wei = wei.masked_fill(self.tril[:T, :T] == 0, float('-inf'))         # (B, T, T) 
         wei = F.softmax(wei, dim=-1)
@@ -84,7 +84,7 @@ class MultiHeadAttention(nn.Module):
         # but modules it contains are properly registered, and will
         # be visible by all Module methods.
         self.heads = nn.ModuleList([Head(block_size, n_embd, head_size, dropout=dropout) for _ in range(num_heads)])
-        self.proj = nn.Linear(n_embd, n_embd)
+        self.proj = nn.Linear(head_size*num_heads, n_embd)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):

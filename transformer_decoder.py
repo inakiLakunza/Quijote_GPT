@@ -1,15 +1,23 @@
 
+import sys
+import os
+
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
+import tqdm
+
 from building_blocks import Block, FeedForward
+
+import wandb
+
 
 # HYPERPARAMETERS
 #==================================================
 BATCH_SIZE = 64
 BLOCK_SIZE = 256
-MAX_ITERS = 5000
+MAX_ITERS = 50000
 EVAL_INTERVAL = 500
 LEARNING_RATE = 3e-4 # self attention needs to have a quite low lr
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -25,11 +33,32 @@ N_LAYERS = 6
 DROPOUT = 0.2
 #==================================================
 
+#wandb.login(key="34db2c5ef8832f040bb5001755f4aa5b64cf78fa",
+#            relogin=True)
+
+wandb.init(
+    project = "encoder_tiny_shakespeare",
+    name = "simple_tokenization_50000iters",
+    config={
+        "tokenizer": "character-level",
+        "dataset": "tiny-gpt",
+        "iters": MAX_ITERS,
+        "manual_seed": 1337,
+        "batch_size": BATCH_SIZE,
+        "block_size": BLOCK_SIZE,
+        "learning_rate": 3e-4,
+        "train_val_split": "90-10"
+    }
+)
+
+wandb.define_metric("loss", summary="min")
+wandb.define_metric("val_loss", summary="min")
+
 
 torch.manual_seed(1337)
 
 # wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt -o tiny_shakespeare.txt
-with open('input.txt', 'r', encoding='utf-8') as f:
+with open('tiny_shakespeare.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 
@@ -55,7 +84,7 @@ def get_batch(split):
     data = train_data if split == 'train' else val_data
     ix = torch.randint(len(data) - BLOCK_SIZE, (BATCH_SIZE,))
     x = torch.stack([data[i:i+BLOCK_SIZE] for i in ix])
-    y = torch.stack([data[i+1:i+BATCH_SIZE+1] for i in ix])
+    y = torch.stack([data[i+1:i+BLOCK_SIZE+1] for i in ix])
     x, y = x.to(DEVICE), y.to(DEVICE)
     return x, y
 
@@ -68,14 +97,15 @@ def get_batch(split):
 @torch.no_grad()
 def estimate_loss():
     out = {}
-    model.eval()
+    m.eval()
     for split in ['train', 'val']:
         losses = torch.zeros(EVAL_ITERS)
         for k in range(EVAL_ITERS):
             X, Y = get_batch(split)
-            logits, loss = model(X, Y)
+            logits, loss = m(X, Y)
+            losses[k] = loss.item()
         out[split] = losses.mean()
-    model.train()
+    m.train()
     return out
 
 
@@ -97,12 +127,21 @@ class TransformerDecoder(nn.Module):
         
         # INSTEAD OF JUST USING A SINGLE HEAD OF 32 DIMENSIONAL SELF ATTENTION
         # WE MUST ASSURE THAT N_EMBD=N_HEADS*HEAD_SIZE, BECAUSE WE MUST MAITAIN THE DIMENSIONALITY!! 
-        self.blocks = nn.Sequential(*[Block(N_EMBD, n_heads=N_HEADS) for _ in range(N_LAYERS)])
+        self.blocks = nn.Sequential(*[Block(N_EMBD, BLOCK_SIZE, n_heads=N_HEADS, dropout=DROPOUT) for _ in range(N_LAYERS)])
 
         self.ln_f = nn.LayerNorm(N_EMBD) # final layer norm
         
         self.lm_head = nn.Linear(N_EMBD, vocab_size)
         
+    def _init_weights(self, module):
+        if isinstance(module, nn.Linear):
+            torch.nn.init.normal_(module.weight, mean=0.0, std=0.02)
+            if module.bias is not None:
+                torch.nn.init.zeros_(module.bias)
+        elif isinstance(module, nn.Embedding):
+            torch.nn.init.normal_(module.weight, mean=0.0, std=0.02)
+
+
     def forward(self, idx, targets=None):
         B, T = idx.shape
 
@@ -140,7 +179,7 @@ class TransformerDecoder(nn.Module):
         else: 
             B, T, C = logits.shape
             logits = logits.view(B*T, C) 
-            targets = targets.view(B*T)
+            targets = targets.view(-1)
             loss = F.cross_entropy(logits, targets)
         
         return logits, loss
@@ -172,20 +211,38 @@ class TransformerDecoder(nn.Module):
 
 
 
-model = TransformerDecoder(vocab_size)
+model = TransformerDecoder()
 m = model.to(DEVICE)
 
+print("Number of parameters of the model:")
+print(f"{sum(p.numel() for p in m.parameters())/1e6} 'M parameters\n\n")
+
+wandb.watch(m, log_freq=100)
 
 # create a PyTorch optimizer
-optimizer = torch.optim.AdamW(m.parameters(), lr=1e-3)
+optimizer = torch.optim.AdamW(m.parameters(), lr=LEARNING_RATE)
 
-for iter in range(MAX_ITERS):
+min_val_loss = 1000000
+for iter in tqdm.tqdm(range(MAX_ITERS)):
 
     # every once in a while evaluate the loss on train and val sets
     if iter % EVAL_INTERVAL == 0:
         losses = estimate_loss()
-        print(f"Step {iter}:\nTrain loss: {losses['train']:.4f}\nVal loss: {losses['val']:.4f}\n")
+        train_loss = losses['train']
+        val_loss = losses['val']
+        print(f"Step {iter}:\nTrain loss: {train_loss:.4f}\nVal loss: {val_loss:.4f}\n")
+        wandb.log({"iter": iter+1, "loss": train_loss, "val_loss": val_loss})
     
+
+        if val_loss < min_val_loss:
+            min_val_loss = val_loss
+            save_path = os.path.join("./", "saved_models", "tiny_shakespeare", )
+            best_val_save_path = os.path.join(save_path, "iters500000_bestval.pth")
+            os.makedirs(save_path, exist_ok=True)
+            torch.save(m.state_dict(), best_val_save_path)
+
+    wandb.log({"iter": iter+1, "loss": train_loss})
+    print(f"Step {iter}:\nTrain loss: {train_loss:.4f}\n")
     # sample a batch of data
     xb, yb = get_batch('train')
     
@@ -195,7 +252,10 @@ for iter in range(MAX_ITERS):
     loss.backward()
     optimizer.step()
 
+wandb.finish()
+
 
 # generate from the model
+print("\n\n\nNOW SOME GENERATION WILL BE WRITTEN, UP TO 1000 TOKENS")
 context = torch.zeros((1, 1), dtype=torch.long, device=DEVICE)
-print(decode(m.generate(context, max_new_tokens=500)[0].tolist()))
+print(decode(m.generate(context, max_new_tokens=1000)[0].tolist()))
