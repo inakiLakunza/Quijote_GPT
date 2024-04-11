@@ -6,19 +6,24 @@ from torch.nn import functional as F
 from building_blocks import Block, FeedForward
 
 # HYPERPARAMETERS
-BATCH_SIZE = 32
-BLOCK_SIZE = 8
+#==================================================
+BATCH_SIZE = 64
+BLOCK_SIZE = 256
 MAX_ITERS = 5000
 EVAL_INTERVAL = 500
-LEARNING_RATE = 1e-3 # self attention needs to have a quite low lr
+LEARNING_RATE = 3e-4 # self attention needs to have a quite low lr
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 EVAL_ITERS = 200
 TRAIN_SPLIT_PERCENT = 90
 
 # Number of embedding dimensions
-N_EMBD = 32
+N_EMBD = 384
 
-#HEAD_SIZE = 16
+N_HEADS = 6  # --> HEAD SIZE will be N_EMBD // N_HEADS = 64
+
+N_LAYERS = 6
+DROPOUT = 0.2
+#==================================================
 
 
 torch.manual_seed(1337)
@@ -75,9 +80,9 @@ def estimate_loss():
 
 
 
-class BigramLanguageModel(nn.Module):
+class TransformerDecoder(nn.Module):
     
-    # We do not need to initialize our Bigram model with the vocab
+    # We do not need to initialize our model with the vocab
     # size since it is already defined as a global variable
     def __init__(self):
         super().__init__()
@@ -90,19 +95,11 @@ class BigramLanguageModel(nn.Module):
         # is important in a phrase.
         self.position_embedding_table = nn.Embedding(BLOCK_SIZE, N_EMBD)
         
-        # Language Modelling Head
-        # FOR NOW, WE WILL USE THE N_EMBD SIZE AS THE HEAD SIZE
-        # AND 4 HEADS, AND 4 HEADS OF 8 DIMENSIONAL SELF ATTENTION,
         # INSTEAD OF JUST USING A SINGLE HEAD OF 32 DIMENSIONAL SELF ATTENTION
-        N_HEADS = 4
         # WE MUST ASSURE THAT N_EMBD=N_HEADS*HEAD_SIZE, BECAUSE WE MUST MAITAIN THE DIMENSIONALITY!! 
-        self.blocks = nn.Sequential(
-            Block(N_EMBD, N_HEADS),
-            Block(N_EMBD, N_HEADS),
-            Block(N_EMBD, N_HEADS),
-        )
-        
-        self.ffwd = FeedForward(N_EMBD)
+        self.blocks = nn.Sequential(*[Block(N_EMBD, n_heads=N_HEADS) for _ in range(N_LAYERS)])
+
+        self.ln_f = nn.LayerNorm(N_EMBD) # final layer norm
         
         self.lm_head = nn.Linear(N_EMBD, vocab_size)
         
@@ -133,8 +130,8 @@ class BigramLanguageModel(nn.Module):
         # each token and the embedding of the position of each token
         # since both the value and the location are important information
         x = token_embd + pos_embd # (B, T, C)
-        x = self.sa_heads(x)  # apply one head of self-attention (B, T, C)
-        x = self.ffwd(x)          # (B, T, C)
+        x = self.blocks(x)        # (B, T, C)
+        x = self.ln_f(x)          # (B, T, C)
         logits = self.lm_head(x)  # (B, T, vocab_size)
 
         
@@ -175,7 +172,7 @@ class BigramLanguageModel(nn.Module):
 
 
 
-model = BigramLanguageModel(vocab_size)
+model = TransformerDecoder(vocab_size)
 m = model.to(DEVICE)
 
 
