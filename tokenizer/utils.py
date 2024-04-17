@@ -2,7 +2,7 @@
 
 
 
-def get_stats(ids, load_counts=None):
+def get_stats(ids: list[int], load_counts: dict[tuple[int, int], int] = None ) -> dict[tuple[int, int], int]:
 
     """
     ids is a list of integers (which will be our) input sentence
@@ -18,10 +18,12 @@ def get_stats(ids, load_counts=None):
     return counts
 
 
-def merge(ids, pair, idx):
+def merge(ids: list[int], pair: tuple[int, int], idx: int) -> list[int]:
 
     """
-    EXPLAIN IT
+    Find the given pair in the input sequence (ids)
+    and replace it with the given idx. We will be replacing 
+    the most common pair with a new merge.
     """
     
     newids = []
