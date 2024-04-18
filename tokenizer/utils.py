@@ -36,3 +36,9 @@ def merge(ids: list[int], pair: tuple[int, int], idx: int) -> list[int]:
             newids.append(ids[i])
             i += 1
     return newids
+
+
+
+def count_total_tokens(list_of_chunks):
+    total = sum(len(sublist) for sublist in list_of_chunks)
+    return total

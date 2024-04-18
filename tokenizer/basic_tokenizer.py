@@ -18,7 +18,7 @@ class BasicTokenizer:
         # and if it has, we will be able to return the train text name
         self.trained: bool = False
         self.train_text_name: str = None
-        self.vocab_size: int
+        self.vocab_size: int = None
 
         # Our vocabulary, it will be initialized with 
         # 256 elements (0 to 256), the elements of UTF-8
