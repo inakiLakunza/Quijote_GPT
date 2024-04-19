@@ -1,8 +1,9 @@
 
+import typing
 
 import regex as re
 
-from basic_tokenizer import BasicTokenizer
+from BasicTokenizer import BasicTokenizer
 
 from utils import get_stats, merge
 from utils import count_total_tokens    
@@ -13,10 +14,8 @@ class RegexTokenizer(BasicTokenizer):
     and now there is the chance of using special tokens
     """
 
-
     def __init__(self, pattern=None):
-        super().__init__()
-
+        
         # Use GPT4's split pattern, else the introduced one 
         GPT4_SPLIT_PATTERN = r"""'(?i:[sdmt]|ll|ve|re)|[^\r\n\p{L}\p{N}]?+\p{L}+|\p{N}{1,3}| ?[^\s\p{L}\p{N}]++[\r\n]*|\s*[\r\n]|\s+(?!\S)|\s+"""
         self.split_pattern = pattern if pattern else GPT4_SPLIT_PATTERN
@@ -26,6 +25,9 @@ class RegexTokenizer(BasicTokenizer):
         self.special_tokens = {}
         self.inverse_special_tokens = {}
 
+        # init inheritance here, because we use special tokens now 
+        # in _get_vocab(), so we first have to create it
+        super().__init__()
 
 
     # @override
@@ -54,8 +56,8 @@ class RegexTokenizer(BasicTokenizer):
         self.inverse_special_tokens = {v: k for k, v in special_tokens.items()}
         """
 
-        for k, v in special_tokens:
-            if k in self.special_tokens:
+        for k, v in special_tokens.items():
+            if k in self.special_tokens.keys():
                 # Delete previously registered item from the inverse dict
                 self.inverse_special_tokens.pop(self.special_tokens[k])
 
@@ -63,11 +65,17 @@ class RegexTokenizer(BasicTokenizer):
             self.inverse_special_tokens[v] = k
 
     
+
     # @override
-    def train(self, text: str, vocab_size: int, verbose=True, train_text_name: str="No name specified"):
+    def train(self, text: str, vocab_size: int, 
+              verbose=True, train_text_name: str="No name specified",
+              printfile: typing.IO=None):
         """
         Train tokenizer with the given input text, and until 
-        we get the wnated vocab size
+        we get the wanted vocab size
+        If verbose specified, if printfile is None, it will print in the
+        terminal, otherwise it will write the text in the specified 
+        file (NORMAL WRITTING, NOT BINARY)
         """
 
         assert vocab_size >= 256, "The new vocab size must be equal or larger than 256"
@@ -93,7 +101,11 @@ class RegexTokenizer(BasicTokenizer):
             
             max_pair = max(stats, key=stats.get)
             idx = 256 + i
-            if verbose: print(f"Merging {max_pair} into a new token: {idx}")
+            if verbose: 
+                if printfile is None:
+                    print(f"Merging {max_pair} into a new token: {idx}")
+                else:
+                    printfile.write(f"Merging {max_pair} into a new token: {idx}\n")
             
             # make merges in the chunks
             ids = [merge(chunk_ids, max_pair, idx) for chunk_ids in ids]
@@ -102,12 +114,19 @@ class RegexTokenizer(BasicTokenizer):
         if verbose:
             n_tokens_before = count_total_tokens(tokens)
             n_tokens_after = count_total_tokens(ids)
-            print("\n---------------------------\n") 
-            
-            print("tokens length: ", n_tokens_before)
-            print("ids length: ", n_tokens_after)
-            print(f"Achieve compression ratio using {n_merges} merges: {(n_tokens_before / n_tokens_after):.2f}X")
 
+            if not printfile:
+                print("\n---------------------------\n") 
+                
+                print("tokens length: ", n_tokens_before)
+                print("ids length: ", n_tokens_after)
+                print(f"Achieve compression ratio using {n_merges} merges: {(n_tokens_before / n_tokens_after):.2f}X")
+            else:
+                printfile.write("\n---------------------------\n")
+                printfile.write(f"tokens length: {n_tokens_before}\n")
+                printfile.write(f"ids length: {n_tokens_after}\n")
+                printfile.write(f"Achieve compression ratio using {n_merges} merges: {(n_tokens_before / n_tokens_after):.2f}X\n")
+            
 
         # Set the trained info, if it was previously trained
         # the stored information will be lost
@@ -116,5 +135,186 @@ class RegexTokenizer(BasicTokenizer):
         self.train_text_name = train_text_name
 
         self.merges = merges
+
+
+
+    def decode(self, ids: list[int]) -> str:
+        """
+        Given ids (list of integers), return Python string
+        All the ids will be given in a single list,
+        not separated in chunks. We do not need to use
+        chunks now, since we are just decoding, we already
+        have our vocab 
+        """
+
+        vocab = self._get_vocab()
+
+        decoded_bytes = []
+
+        # First check in vocab, since it will be the usual,
+        # and then if it is an special token (which is less common)
+        #so we do not have to go through two ifs
+        for idx in ids:
+            if idx in vocab:
+                decoded_bytes.append(vocab[idx])
+            # Check if idx belongs to a special character
+            elif idx in self.inverse_special_tokens:
+                decoded_bytes.append(self.inverse_special_tokens[idx].encode("utf-8"))
+            else:
+                raise ValueError(f"{idx} does not refer to a valid token id")
+            
+        # Join bytes to form a string with them
+        text_in_bytes = b"".join(decoded_bytes)
+        # Decode byte string
+        decoded_str = text_in_bytes.decode("utf-8", errors="replace")
+        return decoded_str
+    
+
+
+    def _encode_chunk(self, chunk_in_bytes: list[bytes]) -> list[int]:
+        """
+        Encode chunk of bytes into ids 
+        """
+
+        # If we do not have trained our Tokenizer
+        # just return the UTF-8 encoding
+        ids = list(chunk_in_bytes)
+        if self.trained:
+            while len(ids) > 2:
+                stats = get_stats(ids)
+                pair = min(stats, key=lambda p: self.merges.get(p, float("inf")))
+                if pair not in self.merges:
+                    break # nothing else can be merged
+                idx = self.merges[pair]
+                ids = merge(ids, pair, idx)
+        
+        return ids
+
+
+
+    def _encode_without_specials(self, text: str) -> list[int]:
+        """
+        Encoding without considering special tokens
+        """
+
+        # Split given text into chunks
+        text_chunks = re.findall(self.compiled_pattern, text)
+        # Encode each chunk separately, and then all joined in ids list
+        ids = []
+        for text_chunk in text_chunks:
+            chunk = text_chunk.encode("utf-8")
+            chunk_ids = self._encode_chunk(chunk)
+            ids.extend(chunk_ids)
+
+        return ids
+
+
+
+    def encode(self, text: str, allowed_special="none_raise") -> list[int]:
+        """
+        Given a string, return a list of integers (the tokens)
+        We have to handle special tokens, and work in chunks
+
+        We will choose which special tokens we allow
+        -if 'none_raise', it means that we will not allow any, 
+        and if we find one special token we will raise an error.
+        -if 'all' , we will work with all the special tokens we have registered
+        -if 'none', we will work with none, and not raise any error
+        """
+
+        special = None
+        if allowed_special.lower() == "none":
+            special = {}
+        elif allowed_special.lower() == "none_raise":
+            special = {}
+            assert all(token not in text for token in self.special_tokens)
+        elif allowed_special.lower() == "all":
+            special = self.special_tokens
+
+
+        if not special:
+            # just work without special tokens, much easier
+            return self._encode_no_special
+        
+        # If we allow special tokens we have to search for them first
+        # We have to split the text if we find any special token
+        # We use re.split for this purpose
+        # Note that if we surround the pattern with () we will
+        # convert it into a capturing group, so we will include 
+        # the special token
+        special_pattern = "(" + "|".join(re.escape(k) for k in special) + ")"
+        special_chunks = re.split(special_pattern, text)
+
+        # Now we have separated all the special characters, and so
+        # we can encode each group separately and then join the results
+        ids = []
+        for chunk in special_chunks:
+            # See if the chunk contains a special token
+            if chunk in special:
+                ids.append(special[chunk])
+            # Else we have an ordinary chunk
+            else:
+                ids.extend(self._encode_without_specials(chunk))
+        
+        return ids
+
+
+
+
+
+
+def main() -> None:
+
+    regex_tokenizer = RegexTokenizer()
+
+    SPECIAL_TOKENS: dict[str, int] = {
+            "<|initoftext|>": 500,
+            "<|endoftext|>":  501,
+            "<|initofbig|>": 510,
+            "<|endofbig|>": 511,
+            "<|dialogueinit|>": 520,
+            "<|dialogueend|>": 521,
+        }
+    regex_tokenizer.register_special_tokens(SPECIAL_TOKENS)
+
+
+    outfile = './output_regex_tokenizer_ancient_rome_with_special_tokens.txt'
+    with open(outfile, 'w') as writef:
+
+        # Try basic tokenizer using Tiny-Shakespeare
+        with open('./../databases/tiny_shakespeare.txt', 'r', encoding='utf-8') as f:
+            train_text = f.read()
+
+        
+        writef.write("Training regex tokeinzer...\n")
+        regex_tokenizer.train(train_text, 276,
+                              verbose=True, 
+                              train_text_name="Tiny Shakespeare",
+                              printfile=writef)
+        
+        with open('./../databases/ancient_rome_with_specials.txt', 'r', encoding='utf-8') as f:
+            test_text = f.read()
+
+
+        
+
+        writef.write("\n\n\n----------------\n")
+        writef.write("Encoding 'Ancient Rome' USING SPECIAL CHARACTERS:\n\n")
+        test_text_encoded = regex_tokenizer.encode(test_text,
+                                                   allowed_special="all")
+        writef.write(str(test_text_encoded))
+
+
+        writef.write("\n\n\n----------------\n")
+        writef.write("Decoding the encoding of 'Ancient Rome':\n\n")
+        test_text_decoded = regex_tokenizer.decode(test_text_encoded)
+        writef.write(test_text_decoded)
+
+
+
+if __name__ == '__main__':
+
+    main()
+
 
 

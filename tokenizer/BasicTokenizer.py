@@ -95,7 +95,7 @@ class BasicTokenizer:
         return ids
         
 
-    def decode(self, ids: list[int]) :
+    def decode(self, ids: list[int]) -> str:
         """
         Given ids (list of integers), return Python string
         """
@@ -107,9 +107,10 @@ class BasicTokenizer:
     
 
 
-if __name__ == '__main__':
 
-    outfile = './basic_tokenizer_ancient_rome_output.txt'
+
+def main() -> None:
+    outfile = './output_basic_tokenizer_ancient_rome.txt'
     with open(outfile, 'w') as writef:
 
         # Try basic tokenizer using Tiny-Shakespeare
@@ -120,7 +121,7 @@ if __name__ == '__main__':
         
         writef.write("Training basic tokeinzer...\n")
         basic_tokenizer.train(train_text, 276,
-                            verbose=True, train_text_name="Tiny Shakespeare")
+                              verbose=True, train_text_name="Tiny Shakespeare")
         
         with open('./../databases/ancient_rome.txt', 'r', encoding='utf-8') as f:
             test_text = f.read()
@@ -136,3 +137,8 @@ if __name__ == '__main__':
         writef.write("Decoding the encoding of 'Ancient Rome':\n")
         test_text_decoded = basic_tokenizer.decode(test_text_encoded)
         writef.write(test_text_decoded)
+
+
+if __name__ == '__main__':
+
+    main()
