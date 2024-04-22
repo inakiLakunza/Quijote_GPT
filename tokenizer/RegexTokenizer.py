@@ -8,6 +8,10 @@ from BasicTokenizer import BasicTokenizer
 from utils import get_stats, merge
 from utils import count_total_tokens    
 
+
+
+
+
 class RegexTokenizer(BasicTokenizer):
     """
     Regex Tokenizer, using the split pattern from GPT-4,
@@ -234,7 +238,7 @@ class RegexTokenizer(BasicTokenizer):
 
         if not special:
             # just work without special tokens, much easier
-            return self._encode_no_special
+            return self._encode_without_specials
         
         # If we allow special tokens we have to search for them first
         # We have to split the text if we find any special token
