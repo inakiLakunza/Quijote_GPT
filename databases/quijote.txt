@@ -1,4 +1,4 @@
-
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo I
 Que trata de la condicion y ejercicio del famoso y valiente hidalgo don Quijote de la Mancha .
@@ -116,6 +116,8 @@ ser bien darle titulo de senora de sus pensamientos; y, buscandole nombre que no
 del suyo y que tirase y se encaminase al de princesa y gran senora, vino a llamarla «Dulcinea del
 Toboso» porque era natural del Toboso: nombre, a su parecer, musico y peregrino y significativo,
 como todos los demas que a el y a sus cosas habia puesto.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo II
 Que trata de la primera salida que de su tierra hizo el ingenioso don Quijote.
@@ -266,6 +268,8 @@ que el abadejo eran truchas, el pan candeal y las rameras damas y el ventero cas
 y con esto daba por bien empleada su determinacion y salida. Mas lo que mas le fatigaba era el no
 verse armado caballero, por parecerle que no se podria poner legitimamente en aventura alguna sin
 recebir la orden de caballeria.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo III
 Donde se cuenta la graciosa manera que tuvo don Quijote en armarse caballero.
@@ -411,6 +415,8 @@ el y, abrazando a su huesped, le dijo cosas tan estranas, agradeciendole la merc
 armado caballero, que no es posible acertar a referirlas. El ventero, por verle ya fuera de la venta,
 con no menos retoricas, aunque con mas breves palabras, respondio a las suyas y, sin pedirle la
 costa de la posada, le dejo ir a la buen hora.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo IV
 De lo que le sucedio a nuestro caballero cuando salio de la venta.
@@ -498,6 +504,8 @@ vive Roque que si no me paga, que vuelva y ejecute lo que dijo!
 la deuda, por acrecentar la paga.
 Y, asiendole del brazo, le torno a atar a la encina, donde le dio tantos azotes, que le dejo por
 muerto.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo V
 Donde se prosigue la narracion de la desgracia de nuestro caballero.
@@ -605,6 +613,8 @@ informo muy a la larga del labrador del modo que habia hallado a don Quijote. El
 con los disparates que al hallarle y al traerle habia dicho, que fue poner mas deseo en el licenciado
 de hacer lo que otro dia hizo, que fue llamar a su amigo el barbero maese Nicolas, con el cual se
 vino a casa de don Quijote.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VI
 Del donoso y grande escrutinio que el cura y el barbero hicieron en la libreria de nuestro ingenioso
@@ -690,6 +700,8 @@ Todo lo confirmo el barbero y lo tuvo por bien y por cosa muy acertada, por ente
 era el cura tan buen cristiano y tan amigo de la verdad, que no diria otra cosa por todas las del
 mundo. Y abriendo otro libro vio que era Palmerin de Oliva, y junto a el estaba otro que se llamaba
 Palmerin de Ingalaterra; lo cual visto por el licenciado, dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VII
 De la segunda salida de nuestro buen caballero don Quijote de la Mancha.
@@ -816,6 +828,8 @@ pero no apoques tu animo tanto, que te vengas a contentar con menos que con ser
 adelantado.
 -No hare, senor mio -respondio Sancho-, y mas teniendo tan principal amo en vuestra
 merced, que me sabra dar todo aquello que me este bien y yo pueda llevar.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VIII
 Del buen suceso que el valeroso don Quijote tuvo en la espantable y jamas imaginada aventura de
@@ -905,6 +919,8 @@ dia saludaban. Al levantarse, dio un tiento a la bota , y hallola algo mas flaca
 afligiosele el corazon, por parecerle que no llevaban camino de remediar tan presto su falta. No
 quiso desayunarse don Quijote, porque, como esta dicho, dio en sustentarse de sabrosas memorias.
 Tornaron a su comenzado camino del Puerto Lapice, y a obra de las tres del dia le descubrieron.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo IX
 Donde se concluye y da fin a la estupenda batalla que el gallardo vizcaino y el valiente manchego
@@ -1030,6 +1046,8 @@ La temerosa y desconsolada senora, sin entrar en cuenta de lo que don Quijote pe
 preguntar quien Dulcinea fuese, le prometieron que el escudero haria todo aquello que de su parte
 le fuese mandado.
 -Pues en fe de esa palabra yo no le hare mas dano, puesto que me lo tenia bien merecido.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo X
 De lo que mas le avino a don Quijote con el vizcaino y del peligro en que se vio con una caterva de
@@ -1157,6 +1175,8 @@ pero faltoles el sol, y la esperanza de alcanzar lo que deseaban, junto a unas c
 cabreros, y, asi, determinaron de pasarla alli; que cuanto fue de pesadumbre para Sancho no llegar a
 poblado fue de contento para su amo dormirla al cielo descubierto, por parecerle que cada vez que
 esto le sucedia era hacer un acto posesivo que facilitaba la prueba de su caballeria.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XI
 De lo que le sucedio a don Quijote con unos cabreros.
@@ -1341,6 +1361,8 @@ tuviese pena, que el pondria remedio con que facilmente se sanase. Y tomando alg
 romero, de mucho que por alli habia, las masco y las mezclo con un poco de sal, y, aplicandoselas a
 la oreja, se la vendo muy bien, asegurandole que no habia menester otra medicina, y asi fue la
 verdad.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XII
 De lo que conto un cabrero a los que estaban con don Quijote.
@@ -1487,6 +1509,8 @@ amo se entrase a dormir en la choza de Pedro. Hizolo asi, y todo lo mas de la no
 memorias de su senora Dulcinea, a imitacion de los amantes de Marcela. Sancho Panza se acomodo
 entre Rocinante y su jumento, y durmio, no como enamorado desfavorecido, sino como hombre
 molido a coces.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIII
 Donde se da fin al cuento de la pastora Marcela, con otros sucesos.
@@ -1613,6 +1637,8 @@ como salteador y ladron.
 -Con todo eso -dijo el caminante-, me parece, si mal no me acuerdo, haber leido que don
 Galaor, hermano del valeroso Amadis de Gaula, nunca tuvo dama senalada a quien pudiese
 encomendarse; y, con todo esto, no fue tenido en menos, y fue un muy valiente y famoso caballero.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIV
 Donde se ponen los versos desesperados del difunto pastor, con otros no esperados sucesos.
@@ -1768,6 +1794,8 @@ pena donde se cavaba la sepultura parecio la pastora Marcela, tan hermosa, que p
 hermosura. Los que hasta entonces no la habian visto la miraban con admiracion y silencio, y los
 que ya estaban acostumbrados a verla no quedaron menos suspensos que los que nunca la habian
 visto. Mas apenas la hubo visto Ambrosio, cuando con muestras de animo indignado le dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XV
 Donde se cuenta la desgraciada aventura que se topo don Quijote en topar con unos desalmados
@@ -1867,6 +1895,8 @@ menester mucho tiempo para venir a conocer las personas, y que no hay cosa segur
 Quien dijera que tras de aquellas tan grandes cuchilladas como vuestra merced dio a aquel
 desdichado caballero andante habia de venir por la posta y en seguimiento suyo esta tan grande
 tempestad de palos que ha descargado sobre nuestras espaldas?
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVI
 De lo que le sucedio al ingenioso hidalgo en la venta que el se imaginaba  ser castillo.
@@ -1960,6 +1990,8 @@ bizmado y acostado, y, aunque procuraba dormir, no lo consentia el dolor de sus 
 Quijote, con el dolor de las suyas, tenia los ojos abiertos como liebre. Toda la venta estaba en
 silencio, y en toda ella no habia otra luz que la que daba una lampara que colgada en medio del
 portal ardia.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVII
 Donde se prosiguen los innumerables trabajos que el bravo don Quijote y su buen escudero Sancho
@@ -2077,6 +2109,8 @@ entrambas canales, con tanta priesa, que la estera de enea sobre quien se habia 
 manta de anjeo con que se cubria, fueron mas de provecho. Sudaba y trasudaba con tales
 parasismos y accidentes, que no solamente el, sino todos pensaron que se le acababa la vida. Duroleesta borrasca y mala andanza casi dos horas, al cabo de las cuales no quedo como su amo, sino tan
 molido y quebrantado, que no se podia tener.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVIII
 Donde se cuentan las razones que paso Sancho Panza con su senor don Quijote, con otras aventuras
@@ -2220,6 +2254,8 @@ fantasmas de anoche.
 -Como dices eso? -respondio don Quijote-. No oyes el relinchar de los caballos, el tocar
 de los clarines, el ruido de los atambores?
 -No oigo otra cosa -respondio Sancho- sino muchos balidos de ovejas y carneros.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIX
 De las discretas razones que Sancho pasaba con su amo y de la aventura que le sucedio con un
@@ -2337,6 +2373,8 @@ oficio y ejercicio andar por el mundo enderezando tuertos y desfaciendo agravios
 habeis vuelto tuerto, dejandome una pierna quebrada, la cual no se vera derecha en todos los dias
 de su vida; y el agravio que en mi habeis deshecho ha sido dejarme agraviado de manera que mequedare agraviado para siempre; y harta desventura ha sido topar con vos que vais buscando
 aventuras.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XX
 De la jamas vista ni oida aventura que con mas poco peligro fue acabada de famoso caballero en el
@@ -2463,6 +2501,8 @@ escucharte, prosigue.
 -«Asi que, senor mio de mi anima -prosiguio Sancho-, que, como ya tengo dicho, este pastor
 andaba enamorado de Torralba la pastora, que era una moza rolliza, zaharena, y tiraba algo a
 hombruna, porque tenia unos pocos de bigotes, que parece que ahora la veo».-Luego conocistela tu? -dijo don Quijote.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXI
 Que trata de la alta aventura y rica ganancia del yelmo de Mambrino, con otras cosas sucedidas a
@@ -2571,6 +2611,8 @@ quitarles los caballos y dejarlos a pie, si ya no fuese que el vencedor hubiese 
 pendencia el suyo, que en tal caso licito es tomar el del vencido, como ganado en guerra licita. Asi
 que, Sancho, deja ese caballo o asno o lo que tu quisieres que sea, que como su dueno nos vea
 alongados de aqui volvera por el.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXII
 De la libertad que dio don Quijote a muchos desdichados que mal de su grado los llevaban donde
@@ -2696,6 +2738,8 @@ por la vida y salud de vuestra merced, que sea tan larga y tan buena como su bue
 merece.
 Este iba en habito de estudiante, y dijo una de las guardas que era muy grande hablador y
 muy gentil latino.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIII
 De lo que le acontecio al famoso don Quijote en Sierra Morena,que fue una de las mas raras
@@ -2853,6 +2897,8 @@ A lo que Sancho respondio:-Harto mejor seria no buscalle, porque si le hallamos 
 claro esta que lo tengo de restituir; y, asi, fuera mejor, sin hacer esta inutil diligencia, poseerlo yo
 con buena fe, hasta que por otra via menos curiosa y diligente pareciera su verdadero senor, y quiza
 fuera a tiempo que lo hubiera gastado, y entonces el rey me hacia franco.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIV
 Donde se prosigue la aventura de la Sierra Morena.
@@ -2958,6 +3004,8 @@ destas cosas tuviese mas excelencia ni mas se aventajase. Estas tan buenas parte
 labradora redujeron a tal termino los deseos de don Fernando, que se determino, para poder
 alcanzarlo y conquistar la entereza de la labradora, darle  palabra de ser su esposo, porque de otra
 manera era procurar lo imposible.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXV
 Que trata de las estranas cosas que en Sierra Morena sucedieron al valiente caballero de la Mancha,
@@ -3105,6 +3153,8 @@ curan de procuralle, como se mostro bien en el que quiso rompelle y le dejo en e
 que a fe que si le conociera, que nunca el le dejara. Guardale, amigo, que por ahora no le he
 menester, que antes me tengo de quitar todas estas armas y quedar desnudo como cuando naci, si es
 que me da en voluntad de seguir en mi penitencia mas a Roldan que a Amadis .
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXVI
 Donde se prosiguen las finezas que de enamorado hizo don Quijote en Sierra Morena.
@@ -3232,6 +3282,8 @@ tentar todo el cuerpo muy apriesa, torno a echar de ver que no le hallaba, y sin
 entrambos punos a las barbas y se arranco la mitad de ellas, y luego apriesa y sin cesar se dio media
 docena de punadas en el rostro y en las narices, que se las bano todas en sangre. Visto lo cual por el
 cura y el barbero, le dijeron que que le habia sucedido, que tan mal se paraba.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXVII
 De como salieron con su intencion el cura y el barbero, con otras cosas dignas de que se cuenten en
@@ -3400,6 +3452,8 @@ Cada dia descubro en vos valores que me obligan y fuerzan a que en mas os estime
 quisieredes sacarme desta deuda sin ejecutarme en la honra, lo podreis muy bien hacer. Padre
 tengo, que os conoce y que me quiere bien, el cual, sin forzar mi voluntad, cumplira la que sera
 justo que vos tengais, si es que me estimais como decis y como yo creo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXVIII
 Que trata de la nueva y agradable aventura que al cura y barbero sucedio en la mesma sierra.
@@ -3586,6 +3640,8 @@ dicho porque no es pensar que de mi alcance cosa alguna el que no fuere mi ligit
 no reparas mas que en eso, bellisima Dorotea (que este es el nombre desta desdichada)», dijo el
 desleal caballero, «ves aqui te doy la mano de serlo tuyo, y sean testigos desta verdad los cielos, a
 quien ninguna cosa se asconde, y esta imagen de Nuestra Senora que aqui tienes.»
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIX
 Que trata de la discrecion  de la hermosa Dorotea, con otras cosas de mucho gusto y pasatiempo.
@@ -3734,6 +3790,8 @@ o mengua de mi rey, de mi patria y de aquella que de mi corazon y libertad tiene
 -No sera en dano ni en mengua de los que decis, mi buen senor -replico la dolorosa
 doncella.
 Y estando en esto se llego Sancho Panza al oido de su senor y muy pasito le dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXX
 Que trata del gracioso artificio y orden que se tuvo en sacar a nuestro enamorado caballero de la
@@ -3858,6 +3916,8 @@ dos tablas a tierra, como por milagro: y asi es todo milagro y misterio el discu
 lo habreis notado. Y si en alguna cosa he andado demasiada, o no tan acertada como debiera, echad
 la culpa a lo que el senor licenciado dijo al principio de mi cuento: que los trabajos continuos y
 extraordinarios quitan la memoria al que los padece.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXI
 De los sabrosos razonamientos que pasaron entre don Quijote y Sancho Panza, su escudero, con
@@ -3984,6 +4044,8 @@ en cuanto el ir antes con la princesa que a ver a Dulcinea. Y avisote que no dig
 los que con nosotros vienen, de lo que aqui hemos departido y tratado; que pues Dulcinea es tan
 recatada, que no quiere que se sepan sus pensamientos, no sera bien que yo ni otro por mi los
 descubra.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXII
 Que trata de lo que sucedio en la venta a toda la cuadrilla de don Quijote.
@@ -4073,6 +4135,8 @@ puesto con un montante en la entrada de una puente, detuvo a todo un innumerable
 pasase por ella; y hizo otras tales cosas, que si, como el las cuenta y las escribe  el asimismo, con la
 modestia de caballero y de coronista propio, las escribiera otro libre y desapasionado, pusieran en
 su olvido las de los Hetores, Aquiles y Roldanes.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXIII
 Donde se cuenta la novela del «Curioso impertinente».
@@ -4212,6 +4276,8 @@ el mesmo consiguiente, sin vida? Escucha, amigo Anselmo, y ten paciencia de no r
 hasta que acabe de decirte lo que se me ofreciere acerca de lo que te ha pedido tu deseo, que tiempo
 quedara para que tu me repliques y yo te escuche.
 -Que me place -dijo Anselmo-, di lo que quisieres.Y Lotario prosiguio diciendo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXIV
 Donde se prosigue la novela del «Curioso impertinente».
@@ -4345,6 +4411,8 @@ que en tu mismo rigor se fortalece.
 Ay de aquel que navega, el cielo escuro,
 por mar no usado y peligrosa via,
 adonde norte o puerto no se ofrece!
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXV
 Donde se da fin a la novela del «Curioso impertinente» .
@@ -4467,6 +4535,8 @@ un mancebo desta ciudad, que me ha dado la mano de ser mi esposo.
 »Sosegose con esto Anselmo y quiso aguardar el termino que se le pedia, porque no pensaba
 oir cosa que contra Camila fuese, por estar de su bondad tan satisfecho y seguro; y, asi, se salio delaposento y dejo encerrada en el a Leonela, diciendole que de alli no saldria hasta que le dijese lo
 que tenia que decirle.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVI
 Que trata de la brava y descomunal batalla que don Quijote tuvo con unos cueros de vino tinto, con
@@ -4596,6 +4666,8 @@ que no han ni deben ser mentirosas, si ya es que te precias de aquello por que m
 sera la firma que hiciste, y testigo el cielo, a quien tu llamaste por testigo de lo que me prometias. Y
 cuando todo esto falte, tu misma conciencia no ha de faltar de dar voces callando en mitad de tus
 alegrias, volviendo por esta verdad que te he dicho y turbando tus mejores gustos y contentos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVII
 Donde se prosigue la historia de la famosa infanta Micomicona, con otras graciosas aventuras.
@@ -4741,6 +4813,8 @@ callaba, dijo:
 -Senoras mias, esta doncella apenas entiende mi lengua, ni sabe hablar otra ninguna sino
 conforme a su tierra, y por esto no debe de haber respondido ni responde a lo que se le ha
 preguntado.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVIII
 Que trata del curioso discurso que hizo don Quijote de las armas y las letras.
@@ -4836,6 +4910,8 @@ dijo que no eran menester ruegos adonde el mandar tenia tanta fuerza.
 que no llegasen los mentirosos que con curioso y pensado artificio suelen componerse.Con esto que dijo hizo que todos se acomodasen y le prestasen un grande silencio; y el,
 viendo que ya callaban y esperaban lo que decir quisiese, con voz agradable y reposada comenzo a
 decir desta manera:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXIX
 Donde el cautivo cuenta su vida y sucesos.
@@ -4929,6 +5005,8 @@ habreis, senores, oido decir que el Uchali se salvo con toda su escuadra, vine y
 en su poder, y solo fui el triste entre tantos alegres y el cautivo entre tantos libres, porque fueron
 quince mil cristianos los que aquel dia alcanzaron la deseada libertad, que todos venian al remo en
 la turquesca armada.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XL
 Donde se prosigue la historia del cautivo.
@@ -5085,6 +5163,8 @@ diese tinta y pluma, porque mejor lo hiciese. Dimosle luego lo que pedia, y el p
 traduciendo, y en acabando, dijo: «Todo lo que va aqui en romance, sin faltar letra, es lo que
 contiene este papel morisco, y hase de advertir que adonde dice Lela Marien quiere decir Nuestra
 Senora la Virgen Maria». Leimos el papel, y decia asi:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLI
 Donde todavia prosigue el cautivo su suceso.
@@ -5197,6 +5277,8 @@ del jardin, cuando ella, volviendose a mi, llenos los ojos de lagrimas, me dijo:
 Yo la respondi:
 -Senora, si, pero no, en ninguna manera, sin ti: el primero juma me aguarda, y no te
 sobresaltes cuando nos veas, que sin duda alguna iremos a tierra de cristianos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLII
 Que trata de lo que mas sucedio en la venta y de otras muchas cosas dignas de saberse.
@@ -5322,6 +5404,8 @@ quien llevara nuevas a nuestro viejo padre de que tenias vida, aunque estuvieras
 mas escondidas de Berberia, que de alli te sacaran sus riquezas, las de mi hermano y las mias! Oh
 Zoraida hermosa y liberal, quien pudiera pagar el bien que a mi hermano hiciste! Quien pudiera
 hallarse al renacer de tu alma  y a las bodas que tanto gusto a todos nos dieran!
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIII
 Donde se cuenta la agradable historia del mozo de mulas, con otros estranos acaecimientos en la
@@ -5475,6 +5559,8 @@ aquella venta; y luego en el instante se le represento en su loca imaginacion qu
 pasada, la doncella fermosa, hija de la senora de aquel castillo, vencida de su amor tornaba a
 solicitarle, y con este pensamiento, por no mostrarse descortes y desagradecido, volvio las riendas a
 Rocinante y se llego al agujero y, asi como vio a las dos mozas, dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIV
 Donde se prosiguen los inauditos sucesos de la venta.
@@ -5592,6 +5678,8 @@ Mas lo que yo podre hacer por serviros es lo que ahora dire: corred y decid a vu
 entretenga en esa batalla lo mejor que pudiere y que no se deje vencer en ningun modo, en tanto
 que yo pido licencia a la princesa Micomicona para poder socorrerle en su cuita; que si ella me la
 da, tened por cierto que yo le sacare della.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLV
 Donde se acaba de averiguar la duda del yelmo de Mambrino y de la albarda, y otras aventuras
@@ -5713,6 +5801,8 @@ buen criado; los cuatro criados de don Luis tambien se estuvieron quedos, viendo
 en no estarlo; solo el ventero porfiaba que se habian de castigar las insolencias de aquel loco, que a
 cada paso le alborotaba la venta. Finalmente, el rumor se apaciguo por entonces, la albarda sequedo por jaez hasta el dia del juicio, y la bacia por yelmo y la venta por castillo en la imaginacion
 de don Quijote.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLVI
 De la notable aventura de los cuadrilleros y la gran ferocidad de nuestro buen caballero don
@@ -5961,6 +6051,8 @@ hace sus necesidades como los demas hombres y como las hacia ayer, antes que le 
 Siendo esto ansi, como quieren hacerme a mi entender que va encantado? Pues yo he oido decir a
 muchas personas que los encantados ni comen, ni duermen, ni hablan, y mi amo, si no le van a la
 mano, hablara mas que treinta procuradores
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLVIII
 Donde prosigue el canonigo la materia de los libros de caballerias, con otras cosas dignas de su
@@ -6076,6 +6168,8 @@ precioso tesoro de la elocuencia, dando ocasion que los libros viejos se escurec
 nuevos que saliesen, para honesto pasatiempo, no solamente  de los ociosos, sino de los mas
 ocupados, pues no es posible que este continuo el arco armado, ni la condicion y flaqueza humana
 se pueda sustentar sin alguna licita recreacion.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIX
 Donde se trata del discreto coloquio que Sancho Panza tuvo con su senor don Quijote.
@@ -6185,6 +6279,8 @@ A lo cual respondio don Quijote:
 pues me habian vuelto el juicio y puestome en una jaula, y que me seria mejor hacer la enmienda y
 mudar de letura, leyendo otros mas verdaderos y que mejor deleitan y ensenan.
 -Asi es -dijo el canonigo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo L
 De las discretas altercaciones que don Quijote y el canonigo tuvieron, con otros sucesos.
@@ -6297,6 +6393,8 @@ Tras ella venia un cabrero dandole voces y diciendole palabras a su uso, para qu
 rebano volviese. La fugitiva cabra, temerosa y despavorida, se vino a la gente, como a favorecerse
 della, y alli se detuvo. Llego el cabrero y, asiendola de los cuernos, como si fuera capaz de discurso
 y entendimiento le dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LI
 Que trata de lo que conto el cabrero a todos los que llevaban al valiente don Quijote.
@@ -6416,6 +6514,8 @@ que dije a esta cabra cuando aqui llegue, que por ser hembra la tengo en poco, a
 de todo mi apero. Esta es la historia que prometi contaros. Si he sido en el contarla prolijo, no sere
 en serviros corto: cerca de aqui tengo mi majada y en ella tengo fresca leche y muy sabrosisimo
 queso, con otras varias y sazonadas frutas, no menos a la vista que al gusto agradables.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LII
 De la pendencia que don Quijote tuvo con el cabrero, con la rara aventura de los deceplinantes, a
@@ -6636,6 +6736,8 @@ hombre honrado haya dado noticia destas discretas locuras, sin querer de nuevo e
 que la abundancia de las cosas, aunque sean buenas, hace que no se estimen, y la carestia, aun de
 las malas, se estima en algo. Olvidabaseme dedecirte que esperes el Persiles, que ya estoy
 acabando, y la segunda parte de Galatea.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo I
 De lo que el cura y el barbero pasaron con don Quijote cerca de su enfermedad.
@@ -6783,6 +6885,8 @@ Neptuno, no sera bien enojar al senor Jupiter: vuestra merced se quede en su cas
 cuando haya mas comodidad y mas espacio, volveremos por vuestra merced». Riose el retor y los
 presentes, por cuya risa se medio corrio el capellan; desnudaron al licenciado, quedose en casa, y
 acabose el cuento.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo II
 Que trata de la notable pendencia  que Sancho Panza tuvo con la sobrina y ama de don Quijote, con
@@ -6903,6 +7007,8 @@ dicho y no comere bocado que bien me sepa hasta ser informado de todo.
 -Pues yo voy por el -respondio Sancho.
 Y, dejando a su senor, se fue a buscar al bachiller, con el cual volvio de alli a poco espacio,
 y entre los tres pasaron un graciosisimo coloquio.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo III
 Del ridiculo razonamiento que paso entre don Quijote, Sancho Panza y el bachiller Sanson
@@ -7022,6 +7128,8 @@ dado gusto que el autor de la historia haya hablado de mi de manera que no enfad
 de mi se cuentan: que a fe de buen escudero que si hubiera dicho de mi cosas que no fueran muy de
 cristiano viejo, como soy, que nos habian de oir los sordos.
 -Eso fuera hacer milagros -respondio Sanson.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo IV
 Donde Sancho Panza satisface al bachiller Sanson Carrasco de sus dudas y preguntas, con otros
@@ -7148,6 +7256,8 @@ bachiller la tuviese secreta, especialmente al cura y a maese Nicolas, y a su so
 porque no estorbasen su honrada y valerosa determinacion. Todo lo prometio Carrasco. Con esto,
 se despidio encargando a don Quijote que de todos sus buenos o malos sucesos le avisase, habiendo
 comodidad; y, asi, se despidieron y Sancho fue a poner en orden lo necesario para su jornada.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo V
 De la discreta y graciosa platica que paso entre Sancho Panza y su mujer Teresa Panza, y otros
@@ -7257,6 +7367,8 @@ dona Urraca, tenias razon de no venir con mi gusto; pero si en dos paletas y en 
 cerrar de ojos te la chanto un don y una senoria a cuestas y te la saco de los rastrojos y te la pongo
 en toldo y en peana y en un estrado de mas almohadas de velludo que tuvieron moros en su linaje
 los Almohadas de Marruecos, por que no has de consentir y querer lo que yo quiero?
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VI
 De lo que le paso a don Quijote con su sobrina y con su ama, y es uno de los importantes capitulos
@@ -7387,6 +7499,8 @@ A este tiempo llamaron a la puerta, y preguntando quien llamaba, respondio Sanch
 que el era; y apenas le hubo conocido el ama, cuando corrio a esconderse, por no verle: tanto le
 aborrecia. Abriole la sobrina, salio a recebirle con los brazos abiertos su senor don Quijote y
 encerraronse los dos en su aposento, donde tuvieron otro coloquio que no le hace ventaja el pasado.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VII
 De lo que paso don Quijote con su escudero, con otros sucesos famosisimos.
@@ -7484,6 +7598,8 @@ refranes como llovidos. Y, finalmente, quiero decir y os digo que si no quereis 
 conmigo y correr la suerte que yo corriere, que Dios quede con vos y os haga un santo, que a mi no
 me faltaran escuderos mas obedientes, mas solicitos, y no tan empachados ni tan habladores como
 vos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo VIII
 Donde se cuenta lo que le sucedio a don Quijote yendo a ver su senora Dulcinea del Toboso.
@@ -7598,6 +7714,8 @@ guardamos a las que hemos hecho senoras de nuestros pensamientos; a la pereza, c
 todas las partes del mundo, buscando las ocasiones que nos puedan hacer y hagan, sobre cristianos,
 famosos caballeros. Ves aqui, Sancho, los medios por donde se alcanzan los estremos de alabanzas
 que consigo trae la buena fama.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo IX
 Donde se cuenta lo que en el se vera.
@@ -7697,6 +7815,8 @@ respuesta que de parte de Dulcinea le habia llevado a Sierra Morena, y, asi, dio
 que fue luego, y a dos millas del lugar hallaron una floresta o bosque, donde don Quijote se
 embosco en tanto que Sancho volvia a la ciudad a hablar a Dulcinea, en cuya embajada le
 sucedieron cosas que piden nueva atencion y nuevo credito.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo X
 Donde se cuenta la industria que Sancho tuvo para encantar a la senora Dulcinea, y de otros sucesos
@@ -7816,6 +7936,8 @@ pregunto a Sancho si las habia dejado fuera de la ciudad.
 -Como fuera de la ciudad? -respondio-. Por ventura tiene vuesa merced los ojos en el
 colodrillo, que no vee que son estas las que aqui vienen, resplandecientes como el mismo sol a
 medio dia?
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XI
 De la estrana aventura que le sucedio al valeroso don Quijote con el carro o carreta de «Las Cortes
@@ -7896,6 +8018,8 @@ que alguna grande aventura se me ofrecia, y ahora digo que es menester tocar las
 mano para dar lugar al desengano. Andad con Dios, buena gente, y haced vuestra fiesta, y mirad si
 mandais algo en que pueda seros de provecho, que lo hare con buen animo y buen talante, porque
 desde mochacho fui aficionado a la caratula, y en mi mocedad se me iban los ojos tras la farandula.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XII
 De la estrana aventura que le sucedio al valeroso don Quijote con el bravo Caballero de los
@@ -7991,6 +8115,8 @@ andante caballero, que, a lo que a mi se me trasluce, no debe de estar demasiada
 porque le vi arrojar del caballo  y tenderse en el suelo con algunas muestras de despecho, y al caer
 le crujieron las armas.
 -Pues en que halla vuesa merced -dijo Sancho- que esta sea aventura?
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIII
 Donde se prosigue la aventura del Caballero del Bosque, con el discreto, nuevo y suave coloquio
@@ -8072,6 +8198,8 @@ buscando lo que no se si despues de hallado le ha de salir a los hocicos.
 -Y es enamorado por dicha?-Si -dijo el del Bosque-, de una tal Casildea de Vandalia, la mas cruda y la mas asada senora
 que en todo el orbe puede hallarse; pero no cojea del pie de la crudeza, que otros mayores embustes
 le grunen en las entranas, y ello dira antes de muchas horas.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIV
 Donde se prosigue la aventura del Caballero del Bosque.
@@ -8197,6 +8325,8 @@ vuelve tresquilado, y Dios bendijo la paz y maldijo las rinas; porque si un gato
 y apretado se vuelve en leon, yo, que soy hombre, Dios sabe en lo que podre volverme, y, asi,
 desde ahora intimo a vuestra merced, senor escudero, que corra por su cuenta todo el mal y dano
 que de nuestra pendencia resultare.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XV
 Donde se cuenta y da noticia de quien era el Caballerode los Espejos y su escudero.
@@ -8246,6 +8376,8 @@ En esto fueron razonando los dos, hasta que llegaron a un pueblo donde fue ventu
 un algebrista, con quien se curo el Sanson desgraciado. Tome Cecial se volvio y le dejo, y el quedo
 imaginando su venganza, y la historia vuelve a hablar del a su tiempo, por no dejar de regocijarse
 ahora con don Quijote.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVI
 De lo que sucedio a don Quijote con un discreto caballero de la Mancha.
@@ -8359,6 +8491,8 @@ de los andantes caballeros.
 -Yo lo dudo -respondio don Quijote-, y quedese esto aqui, que si nuestra jornada dura,
 espero en Dios de dar a entender a vuesa merced que ha hecho mal en irse con la corriente de los
 que tienen por cierto que no son verdaderas.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVII
 De donde se declaro el ultimo punto y estremo adonde llego y pudo llegar el inaudito animo de don
@@ -8501,6 +8635,8 @@ magnanimo, con sola una espada, y no de las del perrillo cortadoras, con un escu
 luciente y limpio acero, estas aguardando y atendiendo los dos mas fieros leones que jamas criaron
 las africanas selvas. Tus mismos hechos sean los que te alaben, valeroso manchego, que yo los dejo
 aqui en su punto, por faltarme palabras con que encarecerlos».
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XVIII
 De lo que sucedio a don Quijote en el castillo o casa del Caballero del Verde Gaban, con otras
@@ -8616,6 +8752,8 @@ ahincadamente a don Lorenzo dijese los versos de la justa literaria, a lo que el
 no parecer de aquellos poetas que cuando les ruegan digan sus versos los niegan y cuando no se los
 piden los vomitan, «yo dire mi glosa, de la cual no espero premio alguno; que solo por ejercitar el
 ingenio la he hecho».
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XIX
 Donde se cuenta la aventura del pastor enamorado, con otros en verdad graciosos sucesos.
@@ -8731,6 +8869,8 @@ pecados, he estudiado canones en Salamanca, y picome algun tanto de decir mi raz
 claras, llanas y significantes.
 -Si no os picaredes mas de saber mas menear las negras que llevais que la lengua  -dijo el
 otro estudiante-, vos llevarades el primero en licencias, como llevastes cola.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XX
 Donde se cuentan las bodas de Camacho el rico, con el suceso de Basilio el pobre.
@@ -8875,6 +9015,8 @@ pocos suelen obrar bien,
 y obrar sin mi es gran milagro;
 y cual soy te me consagro,
 por siempre jamas, amen.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXI
 Donde se prosiguen las bodas de Camacho, con otros gustosos sucesos.
@@ -9032,6 +9174,8 @@ con la cuadrilla de Basilio iba, y asi se dejo atras las ollas de Egipto, aunque
 cuya ya casi consumida y acabada espuma, que en el caldero llevaba, le representaba la gloria y la
 abundancia del bien que perdia; y asi, congojado y pensativo, aunque sin hambre, sin apearse del
 rucio, siguio las huellas de Rocinante.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXII
 Donde se da cuenta de la grande aventura de la cueva de Montesinos, que esta en el corazon de la
@@ -9144,6 +9288,8 @@ Y dijo don Quijote:
 -Calle, senor -replico Sancho-, que a buena fe que si me doy a preguntar y a responder, que
 no acabe de aqui a manana. Si, que para preguntar necedades y responder disparates no he menester
 yo andar buscando ayuda de vecinos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIII
 De las admirables cosas que el estremado don Quijote conto que habia visto en la profunda cueva
@@ -9283,6 +9429,8 @@ igualara la senora Dulcinea a la senora Belerma, pues me bastaba a mi  haber ent
 que barruntos que vuesa merced es su caballero, para que me mordiera la lengua antes de
 compararla sino con el mismo cielo». Con esta satisfacion que me dio el gran Montesinos se quieto
 mi corazon del sobresalto que recebi en oir que a mi senora la comparaban con Belerma.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIV
 Donde se cuentan mil zarandajas tan impertinentes como necesarias al verdadero entendimiento
@@ -9439,6 +9587,8 @@ su senor la juzgo por verdadera venta, y no por castillo, como solia. No hubiero
 cuando don Quijote pregunto al ventero por el hombre de las lanzas y alabardas; el cual le
 respondio que en la caballeriza estaba acomodando el macho. Lo mismo hicieron de sus jumentos
 el primo y Sancho,  dando a Rocinante el mejor pesebre y el mejor lugar de la caballeriza.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXV
 Dondese apunta la aventura del rebuzno y la graciosa del titerero, con las memorables adivinanzas
@@ -9577,6 +9727,8 @@ caidos, baculo y consuelo de todos los desdichados!
 Quedo pasmado don Quijote, absorto Sancho, suspenso el primo, atonito el paje, abobado el
 del rebuzno, confuso el ventero, y, finalmente, espantados todos los que oyeron las razones del
 titerero, el cual prosiguio diciendo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXVI
 Donde se prosigue la graciosa aventura del titerero, con otras cosas en verdad harto buenas.
@@ -9844,6 +9996,8 @@ ninguno le seguia.
 Los del escuadron se estuvieron alli hasta la noche, y por no haber salido a la batalla sus
 contrarios, se volvieron a su pueblo, regocijados  y alegres; y si ellos supieran la costumbre antigua
 de los griegos, levantaran en aquel lugar y sitio un trofeo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXVIII
 De cosas que dice Benengeli que las sabra quien le leyere, si las lee con atencion.
@@ -9966,6 +10120,8 @@ Sancho paso la noche penosamente, porque el varapalo se hacia mas sentir con el 
 Quijote la paso en sus continuas memorias. Pero, con todo eso, dieron los ojos al sueno, y al salir
 del alba siguieron su camino buscando las riberas del famoso Ebro, donde les sucedio lo que se
 contara en el capitulo venidero.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXIX
 De la famosa aventura del barco encantado.
@@ -10075,6 +10231,8 @@ echa de ver que aquellas son acenas que estan en el rio, donde se muele el trigo
 que todas las cosas trastruecan y mudan de su ser natural los encantos. No quiero decir que las
 mudan de en uno  en otro ser realmente, sino que lo parece, como lo mostro la experiencia en la
 transformacion de Dulcinea, unico refugio de mis esperanzas.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXX
 De lo que le avino a don Quijote con una bella cazadora.
@@ -10199,6 +10357,8 @@ castillo. Mando la duquesa a Sancho que fuese junto a ella, porque gustaba infin
 discreciones. No se hizo de rogar Sancho, y entretejiose entre los tres y hizo cuarto en la
 conversacion, con gran gusto de la duquesa y del duque, que tuvieron a gran ventura acoger en su
 castillo tal caballero andante y tal escudero andado.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXI
 Que trata de muchas y grandes cosas.
@@ -10824,6 +10984,8 @@ aprendan mucho de enhoramala a saber rogar y a saber pedir y a tener crianza, qu
 tiempos unos, ni estan los hombres siempre de un buen humor. Estoy yo ahora reventando de pena
 por ver mi sayo verde roto, y vienen a pedirme que me azote de mi voluntad, estando ella
 tan ajena dello como de volverme cacique.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVI
 Donde se cuenta la estrana y jamas imaginada aventura de la duena Dolorida, alias de la condesa
@@ -10963,6 +11125,8 @@ halla mejor que en los caballeros andantes, y de serlo yo doy infinitas gracias 
 muy bien empleado cualquier desman y trabajo que en este tan honroso ejercicio pueda sucederme.
 Venga esta duena y pida lo que quisiere, que yo le librare su remedio en la fuerza de mi brazo y en
 la intrepida resolucion de mi animoso espiritu.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVII
 Donde se prosigue la famosa aventura de la duena Dolorida.
@@ -11017,6 +11181,8 @@ tantearemos la cortesia que se le debe.
 En esto entraron los tambores y el pifaro como la vez primera.
 Y aqui con este breve capitulo dio fin el autor, y comenzo el otro, siguiendo la mesma
 aventura, que es una de las mas notables de la historia.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXVIII
 Donde se cuenta la que dio de su mala andanza la duena Dolorida.
@@ -11167,6 +11333,8 @@ A esta sazon dijo Sancho:
 que imagino que todo el mundo es uno. Pero dese vuesa merced priesa, senora Trifaldi, que es tarde
 y ya me muero por saber el fin desta tan larga historia.
 -Si hare -respondio la condesa.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XXXIX
 Donde la Trifaldi prosigue su estupenda y memorable historia.
@@ -11234,6 +11402,8 @@ martirizado con mil suertes de menjurjes y mudas apenas halla quien bien la quie
 cuando descubra hecho un bosque su rostro? Oh duenas y companeras mias, en desdichado punto
 nacimos, en hora menguada nuestros padres nos engendraron!
 Y diciendo esto, dio muestras de desmayarse.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XL
 De cosas que atanen y tocan a esta aventura y a esta memorable historia.
@@ -11369,6 +11539,8 @@ Dijo esto con tanto sentimiento la Trifaldi, que saco las lagrimas de los ojos d
 circunstantes, y aun arraso los de Sancho, y propuso en su corazon de acompanar a su senor hasta
 las ultimas partes del mundo, si es que en ello consistiese quitar la lana de aquellos venerables
 rostros.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLI
 De la venida de Clavileno, con el fin desta dilatada aventura.
@@ -11506,6 +11678,8 @@ he subido en cabalgadura de paso mas llano: no parece sino que no nos movemos de
 Destierra, amigo, el miedo, que, en efecto, la cosa va como ha de ir y el viento llevamos en popa.
 -Asi es la verdad -respondio Sancho-, que por este lado me da un viento tan recio, que
 parece que con mil fuelles me estan soplando.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLII
 De los consejos que dio don Quijote a Sancho Panza antes que fuese a gobernar la insula, con otras
@@ -11633,6 +11807,8 @@ y tus nietos, viviras en paz y beneplacito de las gentes, y en los ultimos pasos
 alcanzara el de la muerte en vejez suave y madura, y cerraran tus ojos las tiernas y delicadas manos
 de tus terceros netezuelos. Esto que hasta aqui te he dicho son documentos que han de adornar tu
 alma; escucha ahora los que han de servir para adorno del cuerpo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIII
 De los consejos segundos que dio don Quijote a Sancho Panza.
@@ -11771,6 +11947,8 @@ valga. Encomiendate a Dios, y procura no errar en la primera intencion: quiero d
 tengas intento y firme proposito de acertar en cuantos negocios te ocurrieren, porque siempre
 favorece el cielo los buenos deseos. Y vamonos a comer, que creo que ya estos senores nos
 aguardan.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIV
 Como Sancho Panza fue llevado al gobierno, y de la estrana aventura que en el castillo sucedio a
@@ -12024,6 +12202,8 @@ que yo tengo de ser de Dulcinea, cocido o asado, limpio, bien criado y honesto, 
 potestades hechiceras de la tierra».Y con esto cerro de golpe la ventana y, despechado y pesaroso como si le hubiera
 acontecido alguna gran desgracia, se acosto en su lecho, donde le dejaremos por ahora, porque nos
 esta llamando el gran Sancho Panza, que quiere dar principio a su famoso gobierno.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLV
 De como el gran Sancho Panza tomo la posesion de su insula y del modo que comenzo a gobernar.
@@ -12145,6 +12325,8 @@ que yo tenia guardado mas de veinte y tres anos ha, defendiendolo de moros y cri
 naturales y estranjeros, y yo siempre dura como un alcornoque, conservandome entera como la
 salamanquesa en el fuego o como la lana entre las zarzas, para que este buen hombre llegase ahora
 con sus manos limpias a manosearme.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLVI
 Del temeroso espanto cencerril y gatuno que recibio don Quijote en el discurso de los amores de la
@@ -12267,6 +12449,8 @@ habian venido a socorrerle. Los duques le dejaron sosegar y se fueron pesarosos 
 la burla: que no creyeron que tan pesada y costosa le saliera a don Quijote aquella aventura, que le
 costo cinco dias de encerramiento y de cama, donde le sucedio otra aventura mas gustosa que lapasada, la cual no quiere su historiador contar ahora, por acudir a Sancho Panza, que andaba muy
 solicito y muy gracioso en su gobierno.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLVII
 Donde se prosigue como se portaba Sancho Panza en su gobierno.
@@ -12387,6 +12571,8 @@ Y alcense estos manteles y denme a mi de comer, que yo me avendre con cuantas es
 matadores y encantadores vinieren sobre mi y sobre mi insula.En esto entro un paje y dijo:
 -Aqui esta un labrador negociante que quiere hablar a vuestra senoria en un negocio, segun
 el dice, de mucha importancia.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLVIII
 De lo que le sucedio a don Quijote con dona Rodriguez, la duena de la duquesa, con otros
@@ -12510,6 +12696,8 @@ haz de la santa madre Iglesia Catolica Romana, de cuyo matrimonio nacio una hija
 con mi ventura, si alguna tenia, no porque yo muriese del parto, que le tuve derecho y en sazon,
 sino porque desde alli a poco murio mi esposo de un cierto espanto que tuvo, que, a tener ahora
 lugar para contarle, yo se que vuestra merced se admirara.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo XLIX
  De lo que le sucedio a Sancho Panza rondando su insula.
@@ -12650,6 +12838,8 @@ mil ducados si te deja salir un paso de la carcel.
 carcel cuantos hoy viven.
 -Dime, demonio -dijo Sancho-, tienes algun angel que te saque y que te quite los grillos
 que te pienso mandar echar?
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo L
 Donde se declara quien fueron los encantadores y verdugos que azotaron a la duena y pellizcaron y
@@ -12795,6 +12985,8 @@ cortesmente, y el a ellos, le pregunto Sanson les dijese nuevas asi de don Quijo
 Panza, que, puesto que habian leido las cartas de Sancho y de la senora duquesa, todavia estaban
 confusos y no acababan de atinar que seria aquello del gobierno de Sancho, y mas de una insula,
 siendo todas o las mas que hay en el mar Mediterraneo de Su Majestad. A lo que el paje respondio:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LI
 Del progreso del gobierno de Sancho Panza, con otros sucesos tales como buenos
@@ -12932,6 +13124,8 @@ ni aun para cortarme las unas , y, asi, las traigo tan crecidas cual Dios lo rem
 senor mio de mi alma, porque vuesa merced no se espante si hasta agora no he dado aviso de mi
 bien o mal estar en este gobierno, en el cual tengo mas hambre que cuando andabamos los dos por
 las selvas y por los despoblados.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LII
 Donde se cuenta la aventura de la segunda duena Dolorida, o Angustiada, llamada por otro nombre
@@ -13026,6 +13220,8 @@ ello sea asi, como lo es, diga cada uno lo que quisiere: aunque, si va a decir v
 corales y el vestido tampoco yo lo creyera, porque en este pueblo todos tienen a mi marido por un
 porro, y que, sacado de gobernar un hato de cabras, no pueden imaginar para que gobierno pueda
 ser bueno. Dios lo haga y lo encamine como vee que lo han menester sus hijos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LIII
 Del fatigado fin y remate que tuvo el gobierno de Sancho Panza
@@ -13094,6 +13290,8 @@ guerra con que suele defenderse el asalto de una ciudad, y el molido Sancho, que
 sufria todo, decia entre si: «Oh, si Nuestro Senor fuese servido que se acabase ya de perder esta
 insula y me viese yo o muerto o fuera desta grande angustia!». Oyo el cielo su peticion, y cuando
 menos lo esperaba oyo voces que decian:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LIV
 Que trata de cosas tocantes a esta historia, y no a otra alguna.
@@ -13223,6 +13421,8 @@ Ricota mi hija y Francisca Ricota mi mujer son catolicas cristianas, y aunque yo
 todavia tengo mas de cristiano que de moro, y ruego siempre a Dios me abra los ojos del
 entendimiento y me de a conocer como le tengo de servir. Y lo que me tiene admirado es no saberpor que se fue mi mujer y mi hija antes a Berberia que a Francia, adonde podia vivir como
 cristiana.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LV
 De cosas sucedidas a Sancho en el camino, y otras que no hay mas que ver .
@@ -13345,6 +13545,8 @@ aquellas tinieblas a la luz del sol. Viole un estudiante y dijo:
 este pecador del profundo del abismo, muerto de hambre, descolorido y sin blanca, a lo que yo
 creo.
 Oyolo Sancho y dijo:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LVI
 De la descomunal y nunca vista batalla que paso entre don Quijote de la Mancha y el lacayo
@@ -13466,6 +13668,8 @@ tristes y melancolicos de ver que no se habian hecho pedazos los tan esperados c
 perdonado o la parte o la justicia. Fuese la gente, volvieronse el duque y don Quijote al castillo,
 encerraron a Tosilos, quedaron dona Rodriguez y su hija contentisimas de ver que por una via o por
 otra aquel caso habia de parar en casamiento, y Tosilos no esperaba menos.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LVII
 Que trata de como don Quijote se despidio del duque y de lo que le sucedio con la discreta y
@@ -13585,6 +13789,8 @@ el asno le buscaba.
 hacer, de paleta me habia venido la ocasion en mi gobierno.Abajo la cabeza don Quijote y hizo reverencia a los duques y a todos los circunstantes, y
 volviendo las riendas a Rocinante, siguiendole Sancho sobre el rucio, se salio del castillo,
 enderezando su camino a Zaragoza.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LVIII
 Que trata de como menudearon sobre don Quijote aventuras tantas, que no se daban vagar unas a
@@ -13710,6 +13916,8 @@ me paro a mirar a vuestra merced desde la punta del pie hasta el ultimo cabello 
 veo mas cosas para espantar que para enamorar; y habiendo yo tambien oido decir que la
 hermosura es la primera y principal parte que enamora, no teniendo vuestra merced ninguna, no se
 yo de que se enamoro la pobre.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LIX
 Donde se cuenta del extraordinario suceso, que se puede tener por aventura, que le sucedio a don
@@ -13839,6 +14047,8 @@ A esto dijo Sancho:
 -Donosa cosa de historiador! Por cierto, bien debe de estar en el cuento de nuestros
 sucesos, pues llama a Teresa Panza, mi mujer, «Mari Gutierrez»! Torne a tomar el libro, senor, y
 mire si ando yo por ahi y si me ha mudado el nombre.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LX
 De lo que sucedio a don Quijote yendo a Barcelona.
@@ -13963,6 +14173,8 @@ encerrar mas de dos balas en el cuerpo, abriendole puertas por donde envuelta en
 buscarte para que me pases a Francia, donde tengo parientes con quien viva, y asimesmo a rogarte
 defiendas a mi padre, porque los muchos de don Vicente no se atrevan a tomar en el desaforada
 venganza.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXI
 De lo que le sucedio a don Quijote en la entrada de Barcelona, con otras cosas que tienen mas de lo
@@ -14033,6 +14245,8 @@ los seguian.
 Volvieron a subir don Quijote y Sancho; con el mismo aplauso y musica llegaron a la casa
 de su guia, que era grande y principal, en fin como de caballero rico, donde le dejaremos por agora,
 porque asi lo quiere Cide Hamete.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXII
 Que trata de la aventura de la cabeza encantada, con otras ninerias que no pueden dejar de contarse.
@@ -14130,6 +14344,8 @@ que te carcomen el seso y te desnatan el entendimiento.
 pide. El senor don Quijote de la Mancha es muy cuerdo, y nosotros, que le acompanamos, no
 somos necios; la virtud se ha de honrar dondequiera que se hallare, y andad enhoramala y no os
 metais donde no os llaman.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXIII
 De lo mal que le avino a Sancho Panza con la visita de las galeras, y la nueva aventura de la
@@ -14254,6 +14470,8 @@ Quien fuera el de corazon tan duro que con estas razones no se ablandara, o a lo
 hasta oir las que el triste y lastimado mancebo decir queria? El general le dijo que dijese lo que
 quisiese, pero que no esperase alcanzar perdon de su conocida culpa. Con esta licencia, el mozo
 comenzo a decir desta manera:
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXIV
 Que trata de la aventura que mas pesadumbre dio a don Quijote de cuantas hasta entonces le habian
@@ -14359,6 +14577,8 @@ deslocado su amo, que no fuera poca ventura si deslocado quedara. Finalmente, co
 manos que mando traer el visorrey, le llevaron a la ciudad, y el visorrey se volvio tambien a ella
 con deseo de saber quien fuese el Caballero de la Blanca Luna que de tan mal talante habia dejado
 a don Quijote.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXV
 Donde se da noticia de quien era el de la Blanca Luna, con la libertad de don Gregorio, y de otros
@@ -14483,6 +14703,8 @@ Gregorio mil escudos, si los queria, pero el no tomo ninguno, sino solos cinco q
 Antonio, prometiendo la paga dellos en la corte. Con esto se partieron los dos, y don Quijote y
 Sancho despues, como se ha dicho: don Quijote, desarmado y de camino; Sancho, a pie, por ir el
 rucio cargado con las armas.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXVI
 Que trata de lo que vera el que lo leyere o lo oira el que lo escuchare leer.
@@ -14608,6 +14830,8 @@ descortesia dejar que su amo le esperase, que otro dia, si se encontrasen, habri
 levantandose, despues de haberse sacudido el sayo y las migajas de las barbas, antecogio al rucio y,
 diciendo «a Dios», dejo a Tosilos y alcanzo a su amo, que a la sombra de un arbol le estaba
 esperando.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXVII
 De la resolucion que tomo don Quijote de hacerse pastor y seguir la vida del campo en tanto que se
@@ -14726,6 +14950,8 @@ representaban las estrechezas de la andante caballeria usadas en las selvas y en
 tal vez la abundancia se mostraba en los castillos y casas, asi de don Diego de Miranda como en las
 bodas del rico Camacho y de don Antonio Moreno; pero consideraba no ser posible ser siempre de
 dia ni siempre de noche, y, asi, paso aquella durmiendo, y su amo velando.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXVIII
 De la cerdosa aventura que le acontecio a don Quijote.
@@ -14851,6 +15077,8 @@ todo es cortesia y buen comedimiento; pero para los vencidos el bien se vuelve e
 peor.
 Entraron al patio principal del castillo y vieronle aderezado y puesto de manera que les
 acrecento la admiracion y les doblo el miedo, como se vera en el siguiente capitulo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXIX
 Del mas raro y mas nuevo suceso que en todo el discurso desta grande historia avino a don
@@ -14987,6 +15215,8 @@ ropa de las llamas. Suplico Sancho al duque que le dejasen la ropa y mitra, que 
 su tierra por senal y memoria de aquel nunca visto suceso. La duquesa respondio que si dejarian,
 que ya sabia el cuan grande amiga suya era. Mando el duque despejar el patio y que todos se
 recogiesen a sus estancias y que a don Quijote y a Sancho los llevasen a las que ellos ya se sabian.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXX
 Que sigue al de sesenta y nueve y trata de cosas no escusadas para la claridad desta historia.
@@ -15086,6 +15316,8 @@ gananciosos y entristecerse los que pierden, alli en aquel juego todos grunian, 
 todos se maldecian.
 -Eso no es maravilla -respondio Sancho-, porque los diablos, jueguen o no jueguen, nunca
 pueden estar contentos, ganen o no ganen.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXXI
 De lo que a don Quijote le sucedio con su escudero Sancho yendo a su aldea.
@@ -15223,6 +15455,8 @@ como te vale un pan por ciento.
 -No se que mala ventura es esta mia -respondio Sancho-, que no se decir razon sin refran, ni
 refran que no me parezca razon; pero yo me emendare si pudiere.
 Y con esto ceso por entonces su platica.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXXII
 De como don Quijote y Sancho llegaron a su aldea.
@@ -15342,6 +15576,8 @@ que desearse puede. Dineros llevo, porque si buenos azotes me daban, bien caball
 lugar, donde daremos vado a nuestras imaginaciones, y la traza que en la pastoral vida pensamos
 ejercitar.
 Con esto, bajaron de la cuesta y se fueron a su pueblo.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXXIII
 De los agueros que tuvo don Quijote al entrar de su aldea, con otros sucesos que adornan y
@@ -15460,6 +15696,8 @@ lecho, que me parece que no estoy muy bueno, y tened por cierto que, ahora sea c
 pastor por andar, no dejare siempre de acudir a lo que hubieredes menester, como lo vereis por la
 obra.Y las buenas hijas (que lo eran sin duda ama y sobrina) le llevaron a la cama, donde le
 dieron de comer y regalaron lo posible.
+<|endchapter|>
+<|beginchapter|>
 <|beginchaptername|>
 Capitulo LXXIIII
 De como don Quijote cayo malo y del testamento que hizo y su muerte.
@@ -15550,14 +15788,4 @@ merece.
 Y, volviendose a Sancho, le dijo:
 -Perdoname, amigo, de la ocasion que te he dado de parecer loco como yo, haciendote caer
 en el error en que yo he caido de que hubo y hay caballeros andantes en el mundo.
-fin.
-23 de diciembre del 2004
-Amigo lector,  para celebrar el IV Centenario de Don Quijote de la Mancha (1605 -2005),
-me he permitido crear este documento; Basado en la excelente version en linea, con miles de notas
-aclaratorias, publicada por El Centro Virtual Cervantes, que pone a disposicion de todos sus
-visitantes en:  http://cvc.cervantes.es/obref/quijote/
-Gracias,
-Carlos Valencia
-http://es.geocities.com/softcv/
-http://es.geocities.com/dirnatur/
-No me imprimas, salva un arbol. Para que malgastar papel?
+<|endchapter|>

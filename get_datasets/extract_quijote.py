@@ -6,6 +6,12 @@ import PyPDF2
 
 if __name__ == '__main__':
 
+    with open('./../databases/quijote.txt', 'r', encoding='utf-8') as f:
+        text = f.read()
+
+    print(text[-7296:-7200])
+    sys.exit()
+
     pdfFileObj = open("quijote.pdf", 'rb')
     pdfReader = PyPDF2.PdfReader(pdfFileObj, )
 
